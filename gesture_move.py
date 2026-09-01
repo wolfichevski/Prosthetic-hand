@@ -47,7 +47,7 @@ def main():
 
         while True:
             cmd = input(
-                '\nType a command ("peace", "rock", "middle", "open", "close", "quit"): '
+                '\nType a command ("peace", "rock", "open", "close", "quit"): '
             ).strip().lower()
 
             # Re‑enable torque at the start of each gesture cycle
@@ -76,17 +76,6 @@ def main():
                     50,   # pinky open
                 ]
                 do_gesture_then_open(servo, rock_pose)
-
-            elif cmd == "middle":
-                print("Middle finger...")
-                peace_pose = [
-                    420,  # thumb closed
-                    900,   # index closedmi
-                    50,   # middle open
-                    900,  # ring closed
-                    900,  # pinky closed
-                ]
-                do_gesture_then_open(servo, peace_pose)
 
             elif cmd == "open":
                 print("Open gesture...")
