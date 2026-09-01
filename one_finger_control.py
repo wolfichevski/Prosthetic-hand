@@ -21,7 +21,7 @@ def main():
     # Servo safe limits
     with SCSCL(port, baudrate=1000000) as servo:
         servo.with_limits({
-            1: (50, 450),              # Servo 1: limited to 50-450
+            1: (50, 420),              # Servo 1: limited to 50-420
             2: (50, 900, True),         # Servo 2: 50-900, INVERTED
             3: (50, 900, True),         # Servo 3: 50-900, INVERTED
             4: (50, 900, True),         # Servo 4: 50-900, INVERTED
