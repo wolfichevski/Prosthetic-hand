@@ -51,7 +51,7 @@ def main():
             ).strip().lower()
 
             # Re‑enable torque at the start of each gesture cycle
-            if cmd in ("peace", "rock", "middle", "open", "close"):
+            if cmd in ("peace", "rock", "open", "close"):
                 print("\nEnabling torque for hand group...")
                 servo.group_enable_torque("hand", True)
 
